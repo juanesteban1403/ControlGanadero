@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.proyecto.afinal.controlganadero">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegistroActivity" />
+        <activity
+            android:name=".NotificacionesActivity"
+            android:label="@string/title_activity_notificaciones"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PerfilActivity"
+            android:label="@string/title_activity_perfil"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FincasActivity"
+            android:label="@string/title_activity_fincas"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RegistroFincasActivity"></activity>
+    </application>
+
+</manifest>

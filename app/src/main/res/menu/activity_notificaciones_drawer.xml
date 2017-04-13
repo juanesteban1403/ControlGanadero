@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/mPerfil"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="Mi Perfil" />
+        <item
+            android:id="@+id/mFincas"
+            android:icon="@drawable/ic_store_mall_directory_black_24dp"
+            android:title="Mis Fincas" />
+        <item
+            android:id="@+id/mNotificaciones"
+            android:icon="@drawable/ic_announcement_black_24dp"
+            android:title="Notificaciones" />
+        <item
+            android:id="@+id/mCerrar"
+            android:icon="@drawable/ic_system_update_alt_black_24dp"
+            android:title="Cerrar Sesión" />
+    </group>
+
+
+
+</menu>

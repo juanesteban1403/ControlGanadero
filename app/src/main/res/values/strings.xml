@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Control Ganadero</string>
+    <string name="username">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="iniciarSes">Iniciar Sesión</string>
+    <string name="registro">Registrarse</string>
+    <string name="registrous">No eres usuario?</string>
+    <string name="correo">Correo electrónico</string>
+    <string name="password1">Repita contraseña</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="calcelar">Cancelar</string>
+    <string name="usuario" />
+    <string name="title_activity_notificaciones">NotificacionesActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_perfil">PerfilActivity</string>
+    <string name="title_activity_fincas">FincasActivity</string>
+</resources>

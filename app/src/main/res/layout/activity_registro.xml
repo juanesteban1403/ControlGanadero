@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.proyecto.afinal.controlganadero.RegistroActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/vaca"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/correo"
+        android:layout_gravity="center"
+        android:id="@+id/correo"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        android:layout_gravity="center"
+        android:id="@+id/Rusername"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:id="@+id/Rpassword"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password1"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:id="@+id/RRpassword"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/registrarse"
+            android:id="@+id/Rregistro"
+            android:layout_marginRight="10dp"
+
+            android:background="@color/proyecto"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/calcelar"
+            android:id="@+id/Rcancelar"
+            android:background="@color/proyecto"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
