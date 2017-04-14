@@ -20,15 +20,15 @@
         <activity android:name=".RegistroActivity" />
         <activity
             android:name=".NotificacionesActivity"
-            android:label="@string/title_activity_notificaciones"
+            android:label="Notificaciones"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".PerfilActivity"
-            android:label="@string/title_activity_perfil"
+            android:label="Mi Perfil"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".FincasActivity"
-            android:label="@string/title_activity_fincas"
+            android:label="Mis Fincas"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".RegistroFincasActivity"></activity>
     </application>

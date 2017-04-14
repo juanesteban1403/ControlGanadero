@@ -80,9 +80,17 @@ public class PerfilActivity extends AppCompatActivity
             startActivity(intent);
             finish();
         } else if (id == R.id.mFincas) {
+            Intent intent;
+            intent = new Intent(PerfilActivity.this, FincasActivity.class);
+            startActivity(intent);
+            finish();
 
 
         } else if (id == R.id.mNotificaciones) {
+            Intent intent;
+            intent = new Intent(PerfilActivity.this, NotificacionesActivity.class);
+            startActivity(intent);
+            finish();
 
         } else if (id == R.id.mCerrar) {
 
