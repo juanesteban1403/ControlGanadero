@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/username"
         android:layout_gravity="center"
-        android:id="@+id/username"
+        android:id="@+id/eLusername"
 
         android:textColor="@color/black"
         android:textColorHint="@color/black"/>
@@ -28,7 +28,7 @@
         android:hint="@string/password"
         android:inputType="textPassword"
         android:layout_gravity="center"
-        android:id="@+id/password"
+        android:id="@+id/eLpassword"
         android:textColor="@color/black"
         android:textColorHint="@color/black"/>
 
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/iniciarSes"
         android:layout_gravity="center"
-        android:id="@+id/login"
+        android:id="@+id/bLlogin"
         android:background="@color/proyecto"
         android:layout_marginBottom="10dp"
 
@@ -61,7 +61,7 @@
       android:layout_weight="1"
       android:hint="@string/registro"
       android:layout_marginRight="130dp"
-      android:id="@+id/register"
+      android:id="@+id/bLregister"
       android:background="@color/proyecto"
       android:textColor="@color/black"
       android:textColorHint="@color/white"

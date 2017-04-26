@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/correo"
         android:layout_gravity="center"
-        android:id="@+id/correo"
+        android:id="@+id/eRcorreo"
         android:textColorHint="@color/black"
         android:textColor="@color/black"
         />
@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/username"
         android:layout_gravity="center"
-        android:id="@+id/Rusername"
+        android:id="@+id/eRusername"
         android:textColorHint="@color/black"
         android:textColor="@color/black"/>
     <EditText
@@ -37,7 +37,7 @@
         android:hint="@string/password"
         android:inputType="textPassword"
         android:layout_gravity="center"
-        android:id="@+id/Rpassword"
+        android:id="@+id/eRpassword"
         android:textColorHint="@color/black"
         android:textColor="@color/black"/>
     <EditText
@@ -46,7 +46,7 @@
         android:hint="@string/password1"
         android:inputType="textPassword"
         android:layout_gravity="center"
-        android:id="@+id/RRpassword"
+        android:id="@+id/eRrpassword"
         android:textColorHint="@color/black"
         android:textColor="@color/black"/>
     <LinearLayout
@@ -60,7 +60,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/registrarse"
-            android:id="@+id/Rregistro"
+            android:id="@+id/bRregistro"
             android:layout_marginRight="10dp"
 
             android:background="@color/proyecto"
@@ -72,7 +72,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/calcelar"
-            android:id="@+id/Rcancelar"
+            android:id="@+id/bRcancelar"
             android:background="@color/proyecto"
             android:textColor="@color/black"
             android:textColorHint="@color/black"/>

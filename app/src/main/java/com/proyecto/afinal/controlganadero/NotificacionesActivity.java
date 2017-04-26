@@ -1,6 +1,7 @@
 package com.proyecto.afinal.controlganadero;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -16,6 +17,8 @@ import android.view.MenuItem;
 
 public class NotificacionesActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    SharedPreferences prefs;
+    SharedPreferences.Editor editor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +26,8 @@ public class NotificacionesActivity extends AppCompatActivity
         setContentView(R.layout.activity_notificaciones);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        prefs=getSharedPreferences("mispreferencias",MODE_PRIVATE);
+        editor=prefs.edit();
 
 
 
@@ -89,9 +94,12 @@ public class NotificacionesActivity extends AppCompatActivity
         } else if (id == R.id.mNotificaciones) {
 
         } else if (id == R.id.mCerrar) {
-
-
-        }
+            editor.putInt("login",-1);
+            editor.commit();
+            Intent intent=new Intent(NotificacionesActivity.this,LoginActivity.class);
+            startActivity(intent);
+            finish();
+            }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
