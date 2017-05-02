@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.proyecto.afinal.controlganadero">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -9,6 +10,9 @@
         android:roundIcon="@drawable/logoapk"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,7 +34,8 @@
             android:name=".FincasActivity"
             android:label="Mis Fincas"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".RegistroFincasActivity"></activity>
+        <activity android:name=".RegistroFincasActivity" />
+        <activity android:name=".MiFincaActivity"></activity>
     </application>
 
 </manifest>
