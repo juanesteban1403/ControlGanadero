@@ -19,4 +19,5 @@
     <string name="title_activity_perfil">PerfilActivity</string>
     <string name="title_activity_fincas">FincasActivity</string>
     <string name="facebook_app_id">609088145967360</string>
+    <string name="TituloNuevaFinca">Registre su finca llenando los siguientes datos</string>
 </resources>
