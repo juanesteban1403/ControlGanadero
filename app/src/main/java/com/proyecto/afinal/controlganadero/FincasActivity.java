@@ -65,6 +65,8 @@ public class FincasActivity extends AppCompatActivity
                 if(((Lista_Fincas)parent.getItemAtPosition(position)).getNombre()=="El encanto"){
                     Intent intent;
                     intent= new Intent(FincasActivity.this,MiFincaActivity.class);
+                    startActivity(intent);
+                    finish();
 
                 }
             }
@@ -92,12 +94,7 @@ public class FincasActivity extends AppCompatActivity
         }
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.fincas, menu);
-        return true;
-    }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
