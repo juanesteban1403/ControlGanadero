@@ -39,7 +39,8 @@
         <activity android:name=".RegistroFincasActivity" />
         <activity android:name=".MiFincaActivity" />
         <activity android:name=".MisVacasActivity" />
-        <activity android:name=".OrdenoActivity"></activity>
+        <activity android:name=".OrdenoActivity" />
+        <activity android:name=".AgregarVacaActivity"></activity>
     </application>
 
 </manifest>

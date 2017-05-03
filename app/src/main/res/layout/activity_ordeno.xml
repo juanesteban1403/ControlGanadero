@@ -1,9 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context="com.proyecto.afinal.controlganadero.OrdenoActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="Selecione una vaca"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listavacaordeno">
+
+        </ListView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Litros en este ordeño"
+            android:layout_gravity="center"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:id="@+id/tIngresoordeno"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mastitis?"
+            android:gravity="center"
+            android:textSize="30dp"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton style="@style/RadioButtonStyle"
+                android:text="NO"
+                android:id="@+id/bsi"
+                android:checked="true"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton style="@style/RadioButtonStyle"
+                android:text="SI"
+                android:id="@+id/bno"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked"/>
+
+
+
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cuantas ubres?"
+            android:gravity="center"
+            android:textSize="30dp"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton style="@style/RadioButtonStyle"
+                android:text="1"
+                android:id="@+id/buno"
+                android:checked="true"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton style="@style/RadioButtonStyle"
+                android:text="2"
+                android:id="@+id/bdos"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton style="@style/RadioButtonStyle"
+                android:text="3"
+                android:id="@+id/btres"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton style="@style/RadioButtonStyle"
+                android:text="4"
+                android:id="@+id/bcuatro"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked"/>
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+
+        >
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/proyecto"
+            android:textColorHint="@color/white"
+            android:hint="INGRESAR"
+            android:layout_marginLeft="92dp"
+            android:textSize="30dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

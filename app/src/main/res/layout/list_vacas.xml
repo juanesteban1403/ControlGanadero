@@ -27,7 +27,8 @@
                 android:layout_gravity="center"
                 android:text="vaca1"
                 android:textSize="25dp"
-                android:layout_marginLeft="20dp"/>
+                android:layout_marginLeft="20dp"
+                android:id="@+id/tNombrevaca"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -39,13 +40,15 @@
                 android:text="25litros"
                 android:textAlignment="textEnd"
                 android:layout_marginTop="25dp"
-                android:textSize="15dp"/>
+                android:textSize="15dp"
+                android:id="@+id/tLitros"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="prox evento 27/03/217"
                 android:textAlignment="textEnd"
-                android:textSize="15dp"/>
+                android:textSize="15dp"
+                android:id="@+id/tProxevento"/>
 
         </LinearLayout>
 
