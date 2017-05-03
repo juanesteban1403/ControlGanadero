@@ -20,4 +20,7 @@
     <string name="title_activity_fincas">FincasActivity</string>
     <string name="facebook_app_id">609088145967360</string>
     <string name="TituloNuevaFinca">Registre su finca llenando los siguientes datos</string>
+    <string name="TituloNuevaVaca">Ingrese los datos de la nueva vaca</string>
+    <string name="registrarvaca">REGISTRAR</string>
+    <string name="calcelarvaca">CANCELAR</string>
 </resources>

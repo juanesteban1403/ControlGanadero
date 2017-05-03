@@ -9,7 +9,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:src="@drawable/secado"
-            android:id="@+id/imagen"
+            android:id="@+id/imagenvaca"
             android:layout_marginTop="15dp"/>
     </LinearLayout>
 

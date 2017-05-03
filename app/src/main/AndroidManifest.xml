@@ -40,7 +40,8 @@
         <activity android:name=".MiFincaActivity" />
         <activity android:name=".MisVacasActivity" />
         <activity android:name=".OrdenoActivity" />
-        <activity android:name=".AgregarVacaActivity"></activity>
+        <activity android:name=".AgregarVacaActivity" />
+        <activity android:name=".PerfilVacaActivity"></activity>
     </application>
 
 </manifest>
