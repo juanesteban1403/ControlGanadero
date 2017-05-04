@@ -41,7 +41,8 @@
         <activity android:name=".MisVacasActivity" />
         <activity android:name=".OrdenoActivity" />
         <activity android:name=".AgregarVacaActivity" />
-        <activity android:name=".PerfilVacaActivity"></activity>
+        <activity android:name=".PerfilVacaActivity" />
+        <activity android:name=".AgregarEventoVacaActivity"></activity>
     </application>
 
 </manifest>

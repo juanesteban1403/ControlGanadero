@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.media.Image;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -28,6 +29,17 @@ public class MisVacasActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mis_vacas);
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent;
+                intent = new Intent(MisVacasActivity.this,AgregarVacaActivity.class);
+
+                startActivity(intent);
+            }
+        });
+
         lista=(ListView)findViewById(R.id.listavacas);
         Adapter adapter=new Adapter(this, datos);
         lista.setAdapter(adapter);
@@ -37,6 +49,11 @@ public class MisVacasActivity extends AppCompatActivity {
                 String opcion =((Lista_vacas)parent.getItemAtPosition(position)).getNombres();
                 if(opcion =="Sasha"){
                     Intent intent= new Intent(MisVacasActivity.this,PerfilVacaActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+                else if(opcion=="Andrea"){
+                    Intent intent = new Intent(MisVacasActivity.this,PerfilVacaActivity.class);
                     startActivity(intent);
                     finish();
                 }
@@ -62,5 +79,12 @@ public class MisVacasActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(MisVacasActivity.this,MiFincaActivity.class);
+        startActivity(intent);
+        finish();
+    }
 }
 

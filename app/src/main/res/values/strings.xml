@@ -23,4 +23,5 @@
     <string name="TituloNuevaVaca">Ingrese los datos de la nueva vaca</string>
     <string name="registrarvaca">REGISTRAR</string>
     <string name="calcelarvaca">CANCELAR</string>
+    <string name="TituloNuevoRegistro">Registre el evento</string>
 </resources>
